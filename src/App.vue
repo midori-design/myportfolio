@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="bg">
+      <button style="margin-top:100px;" v-on:click="handleClick">Who are you?</button>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  data() {
+    return {
+      msg: "I am Midori.",
+      question: "Who are you?",
+    };
+  },
+  methods: {
+    handleClick() {
+      alert("I'm midori!");
+    },
+  },
+};
 </script>
 
 <style>
@@ -24,5 +32,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.bg {
+  background-image: url("~@/assets/background.jpg");
+  margin: 0 auto;
+  width: 100%;
+  min-height: 700px;
+  background-size: cover;
 }
 </style>
