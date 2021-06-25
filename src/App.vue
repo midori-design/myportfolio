@@ -1,7 +1,23 @@
 <template>
   <div id="app">
-    <div class="bg">
-      <button style="margin-top:100px;" v-on:click="handleClick">Who are you?</button>
+    <div class="main-area">
+      <div class="header">
+        <div>About</div>
+        <div>Works</div>
+        <div>Service</div>      
+        <div>Contact</div>
+      </div>
+      <div class=top-img>
+        <img class="img" src="~@/assets/background.jpg">
+        <div class="gray-mask">
+          <div>SHIBUYA</div>
+          <div>TOKYO</div>
+          <button>Watch Video</button>
+        </div>
+      </div>
+      <div class="about">
+      About This Site
+      </div>
     </div>
   </div>
 </template>
@@ -31,13 +47,77 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
-.bg {
-  background-image: url("~@/assets/background.jpg");
-  margin: 0 auto;
+.main-area {
+  background-color: rgb(255, 255, 255);
   width: 100%;
   min-height: 700px;
   background-size: cover;
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content :flex-end;
+  margin-right: 4px;
+}
+.header > div {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  margin: 8px 4px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.header > div:last-child{
+  background-color: rgba(23, 76, 83, 0.697);
+  color: white;
+}
+.top-img{
+  position: relative;
+  width: 100%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  min-width: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.top-img .gray-mask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  width: 38%;
+  height: 98%;
+  background-color: gray;
+  opacity: .75;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+.about {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-right: 350px;
+}
+button {
+  margin-top: 20px;
+  width: 200px;
+  height:40px;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(158, 218, 227);
+  border-radius: 10px;
+  font-weight: bold;
 }
 </style>
