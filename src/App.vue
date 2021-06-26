@@ -8,11 +8,11 @@
         <div>Contact</div>
       </div>
       <div class=top-img>
-        <img class="img" src="~@/assets/background.jpg">
+        <img src="~@/assets/background.jpg">
         <div class="gray-mask">
           <div>SHIBUYA</div>
           <div>TOKYO</div>
-          <button>Watch Video</button>
+          <button>Watch Goggle Map</button>
         </div>
       </div>
       <div class="about">
@@ -79,13 +79,13 @@ export default {
 .top-img{
   position: relative;
   width: 100%;
+  height: auto;
 }
-.img {
+img {
+  display: block;
   width: 100%;
-  height: 100%;
-  min-width: 500px;
-  max-width: 1000px;
-  margin: 0 auto;
+  min-width: 1000px;
+  margin: 0;
 }
 .top-img .gray-mask {
   display: flex;
@@ -97,7 +97,8 @@ export default {
   top: 0px;
   left: 0px;
   width: 38%;
-  height: 98%;
+  min-width: 380px;
+  height: 100%;
   background-color: gray;
   opacity: .75;
   font-size: 60px;
@@ -105,19 +106,21 @@ export default {
   color: white;
 }
 .about {
+  display: block;
+  width: 350px;
   font-size: 36px;
   font-weight: bold;
   margin-top: 50px;
-  margin-right: 350px;
+  margin-left: 50px;
 }
 button {
-  margin-top: 20px;
-  width: 200px;
+  margin-top: 40px;
+  width: 250px;
   height:40px;
   font-size: 20px;
   color: black;
   background-color: rgb(158, 218, 227);
-  border-radius: 10px;
+  border-radius: 30px;
   font-weight: bold;
 }
 </style>
