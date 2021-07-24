@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div ref="map" style="height:300px;width:500px;"></div>
+  <div ref="map" style="height:300px; width: 380px;"></div>
 </div>
 </template>
 

@@ -88,19 +88,6 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.main-area {
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  min-height: 700px;
-  min-width: 380px;  
-  background-size: cover;
-  margin: 0;
-}
-.header {
-  display: flex;
-  justify-content :flex-end;
-  margin-right: 4px;
-}
 .header > div, a {
   display: flex;
   width: 100px;
@@ -142,6 +129,20 @@ export default {
   color: white;
 }
 @media screen and (min-width: 1000px) { 
+  .main-area {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    min-width: 1000px;  
+    background-size: cover;
+    margin: 0;
+  }
+  .header {
+    display: flex;
+    justify-content :flex-end;
+    margin-right: 4px;
+  }  
   .top-img{
     position: relative;
     width: 100%;
@@ -208,6 +209,21 @@ a{
   margin-top: 30px;
 }
 @media screen and (max-width: 1000px) { 
+  .main-area {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    min-width: 380px;  
+    background-size: cover;
+    margin: 0;
+  }
+  .header {
+    display: flex;
+    justify-content :flex-end;
+    box-sizing: border-box;
+    padding: 10px 0px;
+  }  
   .top-img{
     position: relative;
     width: 100%;
