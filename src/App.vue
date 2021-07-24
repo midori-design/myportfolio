@@ -92,6 +92,7 @@ export default {
   background-color: rgb(0, 0, 0);
   width: 100%;
   min-height: 700px;
+  min-width: 380px;  
   background-size: cover;
   margin: 0;
 }
@@ -140,35 +141,35 @@ export default {
   background-color: rgba(255, 255, 255, 0.697);
   color: white;
 }
-
-.top-img{
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-.img {
-  display: block;
-  width: 100%;
-  min-width: 1000px;
-  margin: 0;
-}
-.top-img .gray-mask {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 1000;
-  top: 0px;
-  left: 0px;
-  width: 38%;
-  min-width: 380px;
-  height: 100%;
-  background-color: gray;
-  opacity: .65;
-  font-size: 60px;
-  /* font-weight: 300px; */
-  color: white;
+@media screen and (min-width: 1000px) { 
+  .top-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .img {
+    display: block;
+    width: 100%;
+    min-width: 1000px;
+    margin: 0;
+  }
+  .top-img .gray-mask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    width: 38%;
+    min-width: 380px;
+    height: 100%;
+    background-color: gray;
+    opacity: .65;
+    font-size: 60px;
+    color: white;
+  }
 }
 .section {
   display: flex;
@@ -205,6 +206,35 @@ a{
   width: 300px;
   height: 30px;
   margin-top: 30px;
+}
+@media screen and (max-width: 1000px) { 
+  .top-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .img {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .top-img .gray-mask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: .65;
+    font-size: 60px;
+    color: white;
+  }
+
 }
 
 /* Animate neon flicker */
